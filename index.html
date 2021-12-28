@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=99vw height=95vh></canvas>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/A301_WebGL_2021_12_28_FullScreen.loader.js";
+      var loaderUrl = buildUrl + "/A301_WebGL_2021_12_28_6Scene.loader.js";
       var config = {
-        dataUrl: buildUrl + "/A301_WebGL_2021_12_28_FullScreen.data",
-        frameworkUrl: buildUrl + "/A301_WebGL_2021_12_28_FullScreen.framework.js",
-        codeUrl: buildUrl + "/A301_WebGL_2021_12_28_FullScreen.wasm",
+        dataUrl: buildUrl + "/A301_WebGL_2021_12_28_6Scene.data",
+        frameworkUrl: buildUrl + "/A301_WebGL_2021_12_28_6Scene.framework.js",
+        codeUrl: buildUrl + "/A301_WebGL_2021_12_28_6Scene.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "A301",
@@ -95,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "99vw";
-        canvas.style.height = "95vh";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
